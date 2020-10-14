@@ -18,3 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'home']);
 Route::get('register', [AuthController::class, 'regis']);
 Route::get('selamat', [AuthController::class, 'selamat']);
+
+Route::get('master', function () {
+    return view('master');
+});
